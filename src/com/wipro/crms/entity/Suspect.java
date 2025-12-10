@@ -29,6 +29,10 @@ public class Suspect {
 	}
 	public void setRemarks(String remarks) {
 		this.remarks = remarks;
+	}
+	@Override
+	public String toString() {
+		return "Suspect [suspectId=" + suspectId + ", name=" + name + ", remarks=" + remarks + "]";
 	}	
-
+	
 }

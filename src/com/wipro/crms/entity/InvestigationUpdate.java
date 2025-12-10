@@ -36,5 +36,10 @@ public class InvestigationUpdate {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	@Override
+	public String toString() {
+		return "InvestigationUpdate [updateId=" + updateId + ", caseId=" + caseId + ", date=" + date + ", description="
+				+ description + "]";
+	}
 	
 }
