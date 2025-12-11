@@ -1,25 +1,25 @@
 package com.wipro.crms.entity;
 
+
 public class CrimeCase {
-	private String caseID;
-	private String crimeType;
-	private String description;
-	private String status;
-	 
-	public CrimeCase(String caseID, String crimeType, String description, String status) {
-		super();
-		this.caseID = caseID;
-		this.crimeType = crimeType;
-		this.description = description;
-		this.status = status;
-	}
-	public String getCaseID(){
-		
-		return caseID;
+    private String caseId;
+    private String crimeType;
+    private String description;
+    private String status;
+
+    public CrimeCase(String caseId, String crimeType, String description, String status) {
+        this.caseId = caseId;
+        this.crimeType = crimeType;
+        this.description = description;
+        this.status = status;
+    }    
+
+    public String getCaseId() {
+		return caseId;
 	}
 
-	public void setCaseID(String caseID) {
-		this.caseID = caseID;
+	public void setCaseId(String caseId) {
+		this.caseId = caseId;
 	}
 
 	public String getCrimeType() {
@@ -45,5 +45,9 @@ public class CrimeCase {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-
+	@Override
+	public String toString() {
+		return "CrimeCase [caseId=" + caseId + ", crimeType=" + crimeType + ", description=" + description + ", status="
+				+ status + "]";
+	}
 }
